@@ -1,0 +1,72 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/nursery"
+  to = "/foundational-education#nursery"
+  status = 301
+
+[[redirects]]
+  from = "/early-years"
+  to = "/foundational-education"
+  status = 301
+
+[[redirects]]
+  from = "/creche"
+  to = "/foundational-education#creche"
+  status = 301
+
+[[redirects]]
+  from = "/primary"
+  to = "/grades"
+  status = 301
+
+[[redirects]]
+  from = "/accreditation"
+  to = "/about"
+  status = 301
+
+[[redirects]]
+  from = "/admin-dashboard"
+  to = "/portal"
+  status = 301
+
+[[redirects]]
+  from = "/teacher-dashboard"
+  to = "/portal"
+  status = 301
+
+[[redirects]]
+  from = "/parent-dashboard"
+  to = "/portal"
+  status = 301
+
+[[redirects]]
+  from = "/index"
+  to = "/"
+  status = 301
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=()"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains"
+    Content-Security-Policy-Report-Only = "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.google.com https://www.gstatic.com https://www.recaptcha.net; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; frame-src https://www.google.com https://www.recaptcha.net; connect-src 'self' https://www.google.com; form-action 'self'; base-uri 'self'; frame-ancestors 'self'"
+
+[[headers]]
+  for = "/assets/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/sw.js"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"

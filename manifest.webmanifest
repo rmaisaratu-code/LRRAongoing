@@ -1,0 +1,46 @@
+{
+ "name": "Learning Roots Royal Academy",
+ "short_name": "Learning Roots",
+ "description": "Foundational Education, Grades 1–6 and Secondary school in Yola.",
+ "start_url": "/",
+ "scope": "/",
+ "display": "standalone",
+ "background_color": "#fbf7ec",
+ "theme_color": "#1a3a9c",
+ "icons": [
+  {
+   "src": "/icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png"
+  },
+  {
+   "src": "/icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png"
+  },
+  {
+   "src": "/icon-maskable-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "maskable"
+  }
+ ],
+ "shortcuts": [
+  {
+   "name": "Apply Now",
+   "url": "/admission-process#apply"
+  },
+  {
+   "name": "School Portal",
+   "url": "/portal"
+  },
+  {
+   "name": "Careers",
+   "url": "/careers"
+  },
+  {
+   "name": "Contact",
+   "url": "/contact"
+  }
+ ]
+}
